@@ -196,13 +196,33 @@ $( document ).ready(function() {
     					);
 		    		}else if(leads[index].message.length>0){
 		    			$('.send-invite__actions button.button-secondary-large').trigger('click');
+// 		    			var keyVal = 75;
+// 		    			var up = jQuery.Event("keyup", { keyCode: 32 });
+// var press = jQuery.Event("keypress", { keyCode: 32 });
+// var down = jQuery.Event("keydown", { keyCode: 32 });
+// jQuery("body").trigger( down );
+// jQuery("body").trigger( press );
+// jQuery("body").trigger( up );
+
 		    			setTimeout(
 		    				function(){
-		    					// $('label #custom-message').focus();
-		    					// $('label #custom-message').val(leads[index].message);
+		    					$('label #custom-message').focus();
+		    					$('label #custom-message').val(leads[index].message);
+		    					// $('label #custom-message').trigger('click');
 		    					// alert('sdfd');
+// var up = jQuery.Event("keyup", { keyCode: 32 });
+// var press = jQuery.Event("keypress", { keyCode: 32 });
+// var down = jQuery.Event("keydown", { keyCode: 32 });
+// jQuery("body").trigger( down );
+// jQuery("body").trigger( press );
+// jQuery("body").trigger( up );
 
-		    					$('label #custom-message').focus(() => { $('label #custom-message').val(leads[index].message); });
+   // var keyVal = 75;
+   //      $("body").trigger ( {
+   //          type: 'keypress', keyCode: keyVal, which: keyVal, charCode: keyVal
+   //      } );
+    
+		    					// $('label #custom-message').focus(() => { $('label #custom-message').val(leads[index].message); });
 		    					setTimeout(
 		    						function(){
 		    							$('.send-invite__actions button.button-primary-large').trigger('click');
